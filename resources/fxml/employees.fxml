@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rs.projekat.EmployeesController">
+    <stylesheets>
+        <URL value="@/css/style.css" />
+    </stylesheets>
+    <center>
+        <TableView fx:id="tableViewEmployees" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colName" prefWidth="110.0" text="First name" />
+                <TableColumn fx:id="colSurname" prefWidth="110.0" text="Last name" />
+                <TableColumn fx:id="colEmail" minWidth="-Infinity" prefWidth="120.0" text="E-mail" />
+                <TableColumn fx:id="colDepartment" prefWidth="100.0" text="Department" />
+                <TableColumn fx:id="colJob" prefWidth="100.0" text="Job name" />
+                <TableColumn fx:id="colHireDate" minWidth="-Infinity" prefWidth="110.0" text="Hire_date" />
+                <TableColumn fx:id="colSalary" prefWidth="90.0" text="Salary" />
+                <TableColumn fx:id="colManager" prefWidth="100.0" text="Manager" />
+            </columns>
+        </TableView>
+    </center>
+    <right>
+        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="150" spacing="5.0" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <Button fx:id="btnDodaj" mnemonicParsing="false" prefWidth="Infinity" text="">
+               <graphic>
+
+               </graphic></Button>
+                <Button fx:id="btnEdit" mnemonicParsing="false" prefWidth="Infinity" text="" />
+                <Button fx:id="btnObrisi" mnemonicParsing="false" prefWidth="Infinity" text="" />
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </padding>
+        </VBox>
+    </right>
+    <bottom>
+        <Button fx:id="BtnCancel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" BorderPane.alignment="CENTER_RIGHT">
+            <BorderPane.margin>
+                <Insets bottom="10.0" right="25.0" top="5.0" />
+            </BorderPane.margin>
+            <graphic>
+                <ImageView fx:id="imgView" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+            </graphic></Button>
+    </bottom>
+</BorderPane>
